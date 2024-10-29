@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- need the line below -->
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    
+    <title>Tetris</title>
+
+    <!-- custom styles -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+
+    <!-- font free awesome 5.15.2 -->
+    <script src="../common_resources/js/all.js"></script>
+
+  </head>
+  <body>
+
+    <button id="button">Start/Pause</button>
+    <h3>Seconds left: <span id="time-left">20</span></h3>
+    <h3 id="result"></h3>
+
+    <div class="previous-shape">
+      <div class="previous-grid">
+        <!-- 4x4 grid = 16 divs -->
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <div class="game">
+      <div class="grid">
+        <!-- 10x20 grid = 200 divs -->
+        <!-- class="block3" added to last 10 divs -->
+      </div>
+    </div>
+
+    <!-- Eruda - mobile web dev tools -->
+    <script src="../common_resources/js/eruda/eruda.js"></script>
+    <script>eruda.init();</script>
+
+    <!-- Game code -->
+    <script src="js/app.js" chaset="utf-8"></script>
+
+  </body>
+</html>
